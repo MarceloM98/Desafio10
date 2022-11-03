@@ -13,6 +13,7 @@ const minutesDisplay = document.querySelector("#minutes")
 const secondsDisplay = document.querySelector("#seconds")
 const lightButton = document.querySelector("#light")
 const darkButton = document.querySelector("#dark")
+let timeRunning = false
 
 
 let minutes = minutesDisplay.innerText
@@ -75,11 +76,15 @@ removeTimeButton.addEventListener('click', ()=>{
 })
 
 playButton.addEventListener('click', ()=>{
-  timer.start()
-  
+  if(!timeRunning){
+    timer.start()
+    timeRunning = true
+  }
 })
+
 stopButton.addEventListener('click', ()=>{
   timer.stop()
+  timeRunning = false
 })
 
 
