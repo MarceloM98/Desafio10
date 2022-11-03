@@ -29,7 +29,14 @@ body{
   position: absolute;
   right: 0;
   top: 0;
+  opacity: .6;
   padding: 2rem 2rem 0 0;
+  transition: .2s;
+  animation: topdown 1s .7s backwards;
+}
+
+.theme:hover{
+  opacity: 1;
 }
 
 main{
@@ -43,7 +50,9 @@ main{
 .time{
   display: flex;
 }
-
+.timer{
+  animation: downtop 1s backwards;
+}
 span{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -55,6 +64,7 @@ button{
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: transform .2s;
 }
 
 .time-controls{
@@ -69,6 +79,7 @@ button{
   "A B"
   "C D";
   gap: 2rem;
+  animation: downtop 1s .4s backwards;
 }
 .sound-controls{
   background-color: var(--bg-btn);
@@ -79,6 +90,10 @@ button{
   align-items: center;
   padding: 3rem;
   max-width: 11.6rem;
+}
+
+button:hover{
+  transform: scale(1.2);
 }
 main svg path{
  fill: var(--primary-color);
@@ -132,9 +147,12 @@ main svg path{
   fill: #FFF;
 }
 
+
+
 @media(min-width:900px){
   .theme{
     padding: 6rem 6rem 0 0;
+    animation: topdown 1s .6s backwards;
   }
 
   main{
@@ -145,7 +163,9 @@ main svg path{
     flex-direction: row;
     justify-content: space-between;
     
-    
+  }
+  .timer{
+    animation: leftRight 1s backwards;
   }
   span{
     font-size: 12.7rem;
@@ -156,6 +176,7 @@ main svg path{
     height: 100%;
     max-width: 30.8rem;
     max-height: 33.6rem;
+    animation: rightLeft 1s .2s backwards;
   }
   .sound-controls{
     min-width: 13.8rem;
@@ -168,5 +189,51 @@ main svg path{
   .volume::-webkit-slider-thumb{
     height: 1.5rem;
     width: 1.5rem;
+  }
+}
+
+
+
+@keyframes topdown{
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: .6;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rightLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
