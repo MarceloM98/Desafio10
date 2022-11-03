@@ -6,13 +6,13 @@ export default function (){
   function activeSoundButton(event,button,name){
     const btn =  document.querySelectorAll('.sound')
     
-    if(event.target == button){
+    if(event.target == button || button.querySelector('svg')){
       sound.forestButton.pause()
       sound.rainButton.pause()
       sound.coffeShopButton.pause()
       sound.fireplaceButton.pause()
-      if(event.target.classList.contains('active')){
-        event.target.classList.remove('active')
+      if(button.classList.contains('active')){
+        button.classList.remove('active')
       }else{
     for(let i=1; i<btn[0].childNodes.length;i+=2){
       if(btn[0].childNodes[i].classList[0] === 'sound-controls'){
@@ -20,7 +20,7 @@ export default function (){
 
       }
     }
-      event.target.classList.add('active')
+      button.classList.add('active')
       sound[name].play()
     }
     }
