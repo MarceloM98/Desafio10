@@ -1,6 +1,7 @@
 import Controls from "./controls.js"
 import Timer from "./timer.js"
 
+
 const forestButton = document.querySelector('.sound button:nth-child(1)')
 const rainButton = document.querySelector(".sound button:nth-child(2)")
 const coffeShopButton = document.querySelector(".sound button:nth-child(3)")
@@ -40,30 +41,18 @@ darkButton.addEventListener('click',()=>{
 
 forestButton.addEventListener('click', (event)=>{
   controls.activeSoundButton(event,forestButton,'forestButton')
-  if(forestButton.classList.contains('active')){
-    
-  }
 })
 
 rainButton.addEventListener('click', (event)=>{
   controls.activeSoundButton(event,rainButton,'rainButton')
-  if(rainButton.classList.contains('active')){
-
-  }
 })
 
 coffeShopButton.addEventListener('click', (event)=>{
   controls.activeSoundButton(event,coffeShopButton,'coffeShopButton')
-  if(coffeShopButton.classList.contains('active')){
-    
-  }
 })
 
 fireplaceButton.addEventListener('click', (event)=>{
   controls.activeSoundButton(event,fireplaceButton,'fireplaceButton')
-  if(fireplaceButton.classList.contains('active')){
-    
-  }
 })
 
 
