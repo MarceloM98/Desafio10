@@ -17,9 +17,9 @@ Projeto proposto pela rocketseat no modulo sobre javascript, DOM.
 <br>
 
 <p align="center">
-  <img alt="Timer" src="screenshot/TimerDark.png" width="100%">
-  <img alt="Timer" src="screenshot/TimerLight.png" width="100%">
-  <img alt="Timer" src="screenshot/TimerP.png" width="100%">
+  <img alt="Timer" src="screenshots/TimerDark.png" width="100%">
+  <img alt="Timer" src="screenshots/TimerLight.png" width="100%">
+  <img alt="Timer" src="screenshots/TimerP.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
