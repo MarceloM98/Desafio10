@@ -17,9 +17,8 @@ Projeto proposto pela rocketseat no modulo sobre javascript, DOM.
 <br>
 
 <p align="center">
-  <img alt="Timer" src="screenshots/TimerDark.png" width="100%">
-  <img alt="Timer" src="screenshots/TimerLight.png" width="100%">
-  <img alt="Timer" src="screenshots/TimerP.png" width="100%">
+  <img alt="TimerD" src="https://github.com/MarceloM98/Desafio10/raw/master/screenshots/timerDark.png" width="100%">
+  <img alt="TimerL" src="https://github.com/MarceloM98/Desafio10/raw/master/screenshots/timerLight.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -36,7 +35,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O timer 3.0 é um upgrade no timer de estudos para o metodo pomodoro, tendo todas as funcionalidades de sua versão 2.0 ([Link aqui](https://marcelom98.github.io/Desafio9/)) e tendo sido adicionado controle de volume para os audios, desativação automatica quando selecionado um novo audio, dark mode e responsividade no layout. [Acesse aqui](https://marcelom98.github.io/Desafio10/)
-
 
 ## :memo: Licença
 
